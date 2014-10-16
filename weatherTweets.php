@@ -169,9 +169,9 @@
                     type: 'pie',
                     name: 'Positivity/Negativity',
                     data: [
-                      ['Positive', <?php echo $positiveTweets; ?>],
-                      ['Negative', <?php echo $negativeTweets;?>],
-                      ['Not In Query Parameters', <?php echo $notInQuery;?>]
+                      ['Positive', '12'],
+                      ['Negative', '21'],
+                      ['Not In Query Parameters', '3']
                     ]
                   }]
                 });
