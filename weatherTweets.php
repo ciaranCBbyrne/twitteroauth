@@ -36,6 +36,8 @@
                 $url = "http://api.openweathermap.org/data/2.5/weather?q=".$city.","."&units=metric&cnt=7&lang=en";
                 $json = file_get_contents($url);
                 $data = json_decode($json,TRUE);
+                
+                echo $data['weather'][0]['main'];
               }
           
               //call twitter api
