@@ -18,7 +18,6 @@
             
           <div class="col-sm-6 col-md-4 col lg-2">
             
-            //create text box      
             <form name="picker" method="post">
               
               <div class="btn-group">
@@ -130,8 +129,7 @@
             ?>
           </div>
         </div>
-          
-          //code for highcharts pie chart         
+                  
           <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
           <script src="highcharts/highcharts.js"></script>
           <div id="chart"></div>
