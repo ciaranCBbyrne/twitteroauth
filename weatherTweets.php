@@ -176,7 +176,6 @@
               });
             });
           </script>
-          //compile pie chart
           <script src="highcharts/highcharts.js"></script>
           <script src="highcharts/exporting.js"></script>
           <div id="container" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
