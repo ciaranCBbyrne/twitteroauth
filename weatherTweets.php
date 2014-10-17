@@ -46,7 +46,7 @@
                 session_start();
 
                 //Path to twitteroauth library
-                require_once("blob/master/twitteroauth/twitteroauth.php");
+                require_once("twitteroauth/twitteroauth.php");
 
                 //the type of query you want to perform via the twitter api
                 $url = "https://api.twitter.com/1.1/search/tweets.json";
