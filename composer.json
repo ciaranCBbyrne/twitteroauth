@@ -1,7 +1,7 @@
 {
   "require": {
     "php": "~5.6.0"
-  }
+  },
   "require":{
     "components/jquery": "1.9.*"
   }
