@@ -36,8 +36,6 @@
                 $url = "http://api.openweathermap.org/data/2.5/weather?q=".$city.","."&units=metric&cnt=7&lang=en";
                 $json = file_get_contents($url);
                 $data = json_decode($json,TRUE);
-                
-                echo $data['weather'][0]['main'];
               }
           
               //call twitter api
@@ -179,7 +177,7 @@
             });
           </script>
           <script src="highcharts/highcharts.js"></script>
-          <script src="highcharts/exporting.js"></script>
+          <script src="highcharts/modules/exporting.js"></script>
           <div id="container" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
         </div>
     </div>
