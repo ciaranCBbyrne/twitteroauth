@@ -85,10 +85,10 @@
                 $fqurl = $url.$mainQuery.$count.$lang.$loc."&since=".date(Y/m/d);
 
                 //api access
-                $consumerkey = ENV[CON_KEY];
-                $consumersecret = ENV[CON_SEC]; 
-                $accesstoken = ENV[ACC_TOK]; 
-                $accesstokensecret = ENV[ACC_SEC]; 
+                $consumerkey = 'CON_KEY';
+                $consumersecret = 'CON_SEC'; 
+                $accesstoken = 'ACC_TOK'; 
+                $accesstokensecret = 'ACC_SEC'; 
 
                 //generates the access tokens
                 function getConnectionWithAccessToken($cons_key, $cons_secret, $oauth_token, $oauth_token_secret) {
