@@ -133,7 +133,7 @@
         </div>
                   
           <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
-          <script src="highcharts/highcharts.js"></script>
+          <script src="http://code.highcharts.com/highcharts.js"></script>
           <div id="chart"></div>
     
           <script type="text/javascript">
