@@ -140,7 +140,8 @@
 
                 var chart = new Highcharts.Chart({
 
-                  chart: {                        
+                  chart: {            
+                    renderTo:'container',
                     plotBackgroundColor: null,
                     plotBorderWidth: null,
                     plotShadow: false
