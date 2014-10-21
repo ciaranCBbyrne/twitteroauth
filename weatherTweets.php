@@ -16,7 +16,7 @@
           
                   
           <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
-          <script src="http://code.highcharts.com/highcharts.js"></script>
+          <script src="highcharts/highcharts.js"></script>
           <div id="chart"></div>
     
             <script type="text/javascript">
@@ -60,8 +60,8 @@
                 });
               });
             </script>
-            <script src="http://code.highcharts.com/highcharts.js"></script>
-            <script src="http://code.highcharts.com/modules/exporting.js"></script>
+            <script src="highcharts/highcharts.js"></script>
+            <script src="highcharts/modules/exporting.js"></script>
             <div id="container" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
         <div class="row">
             
