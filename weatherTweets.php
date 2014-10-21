@@ -146,7 +146,6 @@
                     plotShadow: false
                   },
                   title: {
-                    //get location from input
                     text: '<?php echo ucwords($_POST['location']);?>'
                   },
                   tooltip: {
@@ -157,7 +156,7 @@
                       allowPointSelect: true,
                       cursor: 'pointer',
                       dataLabels: {
-                          enabled: true,
+                          enabled: true
                       },
                       showInLegend:true
                     }
