@@ -27,7 +27,7 @@
   
                     chart: {
                       renerTo:'container',
-                      plotBackgroundColor: null,
+                      plotBackgroundColor: '#F00000',
                       plotBorderWidth: null,
                       plotShadow: false
                     },
