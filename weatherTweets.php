@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset ="utf-8">
+    <meta charset ="utf-8" />
     <title>Weather Tweets</title>
-    <link rel="stylesheet" type="text/css" href="bootstrap-3.2.0-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="bootstrap-3.2.0-dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.2.0-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.2.0-dist/css/bootstrap-theme.min.css"/>
     <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
     <script type="text/javascript" src="bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
 
@@ -138,10 +138,9 @@
             $(function() {
               $(document).ready(function(){
 
-                var chart = new Highcharts.Chart({
+                $('#container').highcharts({
 
-                  chart: {            
-                    renderTo:'container',
+                  chart: {
                     plotBackgroundColor: null,
                     plotBorderWidth: null,
                     plotShadow: false
