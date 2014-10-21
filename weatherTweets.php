@@ -132,52 +132,52 @@
                   
           <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
           <script src="http://code.highcharts.com/highcharts.js"></script>
-          <div id="chart"></div>
+          <div id="chart">
     
-          <script type="text/javascript">
-            $(function() {
-              $(document).ready(function(){
-
-                $('#container').highcharts({
-
-                  chart: {
-                    plotBackgroundColor: null,
-                    plotBorderWidth: null,
-                    plotShadow: false
-                  },
-                  title: {
-                    text: '<?php echo ucwords($_POST['location']);?>'
-                  },
-                  tooltip: {
-                    pointFormat:'{series.name}: <b>{point.percentage:.1f}%</b>'                      
-                  },
-                  plotOptions: {
-                    pie: {
-                      allowPointSelect: true,
-                      cursor: 'pointer',
-                      dataLabels: {
-                          enabled: true
-                      },
-                      showInLegend:true
-                    }
-                  },
-                  series: [{
-                    //data for pie chart
-                    type: 'pie',
-                    name: 'Positivity/Negativity',
-                    data: [
-                      ['Positive', '12'],
-                      ['Negative', '21'],
-                      ['Not In Query Parameters', '3']
-                    ]
-                  }]
+            <script type="text/javascript">
+              $(function() {
+                $(document).ready(function(){
+  
+                  $('#container').highcharts({
+  
+                    chart: {
+                      plotBackgroundColor: null,
+                      plotBorderWidth: null,
+                      plotShadow: false
+                    },
+                    title: {
+                      text: '<?php echo ucwords($_POST['location']);?>'
+                    },
+                    tooltip: {
+                      pointFormat:'{series.name}: <b>{point.percentage:.1f}%</b>'                      
+                    },
+                    plotOptions: {
+                      pie: {
+                        allowPointSelect: true,
+                        cursor: 'pointer',
+                        dataLabels: {
+                            enabled: true
+                        },
+                        showInLegend:true
+                      }
+                    },
+                    series: [{
+                      type: 'pie',
+                      name: 'Positivity/Negativity',
+                      data: [
+                        ['Positive', '12'],
+                        ['Negative', '21'],
+                        ['Not In Query Parameters', '3']
+                      ]
+                    }]
+                  });
                 });
               });
-            });
-          </script>
-          <script src="http://code.highcharts.com/highcharts.js"></script>
-          <script src="http://code.highcharts.com/modules/exporting.js"></script>
-          <div id="container" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+            </script>
+            <script src="http://code.highcharts.com/highcharts.js"></script>
+            <script src="http://code.highcharts.com/modules/exporting.js"></script>
+            <div id="container" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+          </div>  
         </div>
     </div>
   </body>
