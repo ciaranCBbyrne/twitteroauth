@@ -138,7 +138,7 @@
             $(function() {
               $(document).ready(function(){
 
-                $("#container").highcharts({
+                var chart = new Highcharts.Chart({
 
                   chart: {                        
                     plotBackgroundColor: null,
