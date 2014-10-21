@@ -26,7 +26,7 @@
                   $('#container').highcharts({
   
                     chart: {
-                      renerTo:'container',
+                      renderTo:'container',
                       plotBackgroundColor: '#F00000',
                       plotBorderWidth: null,
                       plotShadow: false
