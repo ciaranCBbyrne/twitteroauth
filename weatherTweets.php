@@ -32,7 +32,6 @@
               if(isset($_POST['location'])){
           
                 $city = $_POST['location'];
-                $country = "IE";
                 $url = "http://api.openweathermap.org/data/2.5/weather?q=".$city.","."&units=metric&cnt=7&lang=en";
                 $json = file_get_contents($url);
                 $data = json_decode($json,TRUE);
@@ -49,7 +48,7 @@
                 //the type of query you want to perform via the twitter api
                 $url = "https://api.twitter.com/1.1/search/tweets.json";
 
-                //hash tag in a URL friendly format
+                //search and hash tag in a URL friendly format
                 $search = "?q=";
                 $hashtag = "%23";
 
@@ -78,10 +77,10 @@
                 //specify language = english
                 $lang = "&lang=en";
 
-                //add location
+                //add geo-location taken from openweather
                 $loc = "&geocode=" . $data[coord][lat] . "," . $data[coord][lon] . ",2mi";
 
-                //creates the full url for the connection to use
+                //creates the full url for the connection to use specifying today's date
                 $fqurl = $url.$mainQuery.$count.$lang.$loc."&since=".date(Y/m/d);
 
                 //api access
@@ -106,7 +105,7 @@
                 $positiveTweets = 0;
                 $negativeTweets = 0;
 
-                //loop through tweets checking for each word
+                //loop through gathered tweets checking each word against our pos/neg search words and counting
                 foreach($tweets as $twit){
                   for($x=0 ; $x<count($queryPos) ; $x++){
                    if(strpos($twit->text, $queryPos[$x]) != FALSE){
@@ -120,11 +119,9 @@
                   }
                 }
 
+                //Working off assumption of 100 tweets
                 $allTweets = $positiveTweets + $negativeTweets;
                 $notInQuery = 100 - $allTweets;
-
-                echo "Positive Tweets About " . ucwords($_POST['location']) . ": " . $positiveTweets . "<br/>";
-                echo "Negative Tweets About " . ucwords($_POST['location']) . ": " . $negativeTweets . "<br/>";
               }
             ?>
           </div>
@@ -144,6 +141,12 @@
                     plotBackgroundColor: null,
                     plotBorderWidth: null,
                     plotShadow: false
+                  },
+                  credits:{
+                    enabled: false
+                  },
+                  exporting{
+                    enabled: false
                   },
                   title: {
                     text: '<?php echo ucwords($_POST['location']);?>'
