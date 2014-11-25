@@ -118,10 +118,6 @@
                     }
                   }
                 }
-
-                //Working off assumption of 100 tweets
-                $allTweets = $positiveTweets + $negativeTweets;
-                $notInQuery = 100 - $allTweets;
               }
             ?>
           </div>
@@ -169,8 +165,7 @@
                     name: 'Positivity/Negativity',
                     data: [
                       ['Positive', '<?php echo $positiveTweets; ?>'],
-                      ['Negative', '<?php echo $negativeTweets; ?>'],
-                      ['Not In Query Parameters', '<?php echo $notInQuery; ?>']
+                      ['Negative', '<?php echo $negativeTweets; ?>']
                     ]
                   }]
                 });
