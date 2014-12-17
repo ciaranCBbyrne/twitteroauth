@@ -1,3 +1,9 @@
+WeatherTweets with TwitterOAuth
+-------------
+WeatherTweets is a php mashup that takes a location input from the user, gets a geo-location for this location from "openweathermap.org" and searches twitter using the TwitterOAuth library to give a pie chart display of what people have tweeted about the location on today's date. It uses search words describing positive against negative weather conditions.
+Thanks to abraham/twitteroauth.
+
+
 TwitterOAuth
 ------------
 
